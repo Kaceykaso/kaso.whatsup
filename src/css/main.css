@@ -33,6 +33,12 @@ p {
     text-decoration: underline;
  }
 
+ .textEllipsis {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   text-wrap: nowrap;
+ }
+
 /* HEADER 💀 */
 
 header {
@@ -64,7 +70,7 @@ header ul {
     border-radius: 4px;
     box-shadow: 1px 1px 5px 1px darkslategrey;
    /* Space 🪐 */
-    margin: 0.5em;
+    margin: 0.5vw;
  }
 
  section.main {
@@ -74,8 +80,6 @@ header ul {
     padding: 1em;
     width: 65vw;
  }
-
-
 
  /* FOOTER 🦶 */
 
@@ -137,8 +141,8 @@ header ul {
       margin-top: 10px;
    }
    footer#footer {
-      margin: 10px 0 0;
-      padding: 0 15px 10px;
+      flex-flow: row wrap;
+      justify-content: space-around;
       position: relative;
    }
  }
