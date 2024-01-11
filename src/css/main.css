@@ -1,0 +1,156 @@
+/**
+    kaso.whatsup > css
+	kaso.rocks | @kaceykaso
+	GNU GPL 3.0 license
+
+COLOR PALETTE
+-------------
+tbd
+**/
+
+/* BODY 🧍‍♂️ */
+
+body {
+    /* Colors 🎨 */
+    background: linear-gradient(180deg, rgb(244, 78, 183), teal, rgb(151, 65, 151), rgb(246, 246, 124)) no-repeat;
+    color: #2F2D29;
+    /* Space 🪐 */
+    height: 100vh;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1vh;
+    margin: 0 auto;
+ }
+
+ ul {
+    list-style: none;
+ }
+
+ a {
+    color: black;
+    text-decoration: underline;
+ }
+
+/* HEADER 💀 */
+
+header {
+    display: inline;
+    font-size: 1.5vh;
+    /* Space 🪐 */
+    float: right;
+    margin: 0;
+    padding: 1em;
+    width: 32vw;
+}
+
+header ul {
+    display: flex;
+    /* Flexing 💪 */
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+ /* CONTENT 📖 */
+
+ .main {
+    /* Colors 🎨 */
+    background: darkgrey;
+    color: black;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 1px darkslategrey;
+   /* Space 🪐 */
+    margin: 0.5em;
+ }
+
+ section.main {
+    display: inline;
+    /* Space 🪐 */
+    float: left;
+    padding: 1em;
+    width: 65vw;
+ }
+
+
+
+ /* FOOTER 🦶 */
+
+ footer#footer {
+    display: flex;
+    /* Space 🪐 */
+    bottom: 0;
+    margin: 2em 0;
+    position: fixed;
+    width: 100vw;
+    /* Flexing 💪 */
+    flex-flow: row nowrap;
+    justify-content: center;
+ }
+ 
+ footer ul {
+    display: flex;
+    /* Space 🪐 */
+    padding: 0;
+    /* Flexing 💪 */
+    flex-flow: row nowrap;
+ }
+
+ footer ul li {
+    margin: 0 .5vh;
+ }
+
+ footer p {
+    margin: 0;
+    padding: 0;
+ }
+
+ footer#footer > * {
+    margin: 0 1vh;
+ }
+
+ /* TYPOGRAPHY 🔤 */
+
+ header h1 {
+    font-size: 1.5vh;
+ }
+
+ footer#footer {
+    font-size: 1vh;
+ }
+
+ /* FORMS 📝 */
+
+ /* ANIMATIONS 📺 */
+
+ /* RESPONSIVE 📱 */
+ @media screen and (min-width: 50px) and (max-width: 650px) {
+   header.main, section.main {
+      display: block;
+      float: none;
+      width: 95%;
+   }
+   section.main {
+      margin-top: 10px;
+   }
+   footer#footer {
+      margin: 10px 0 0;
+      padding: 0 15px 10px;
+      position: relative;
+   }
+ }
+
+ /* OVERRIDES ☠️ */
+ a.nes-btn,
+.nes-container {
+    margin-bottom: 1em;
+}
+
+ @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    .nes-btn {
+        border-image-repeat: stretch;
+    }
+ }
