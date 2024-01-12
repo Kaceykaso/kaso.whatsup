@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "http-server": "^14.1.1",
+    "node": "^21.2.0"
+  },
+  "name": "kaso.whatsup",
+  "description": "Google calendar experiment - displaying a calendar in view, that has been populated with randomly generated events. This calendar actually retains my actual free/available time ranges based on my actual events, and highlights the available time in view. Eventually, a viewer/user should be able to add an event to my calendar and view that; this event should be sent and added to my real google calendar as well.",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "Kaceykaso",
+  "license": "ISC"
+}
