@@ -1,5 +1,5 @@
 /**
- *  kaso.whatsup > JS > Main
+ *  kaso.whatsup > JS > Calendar
  *	kaso.rocks | @kaceykaso
  *	GNU GPL 3.0 license
  */
