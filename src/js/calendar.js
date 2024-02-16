@@ -4,14 +4,14 @@
  *	GNU GPL 3.0 license
  */
 
-/* exported gapiLoaded */
-      /* exported gisLoaded */
-      /* exported handleAuthClick */
-      /* exported handleSignoutClick */
+/*exported gapiLoaded
+exported gisLoaded
+exported handleAuthClick
+exported handleSignoutClick*/
 
 // TODO(developer): Set to client ID and API key from the Developer Console
-const CLIENT_ID = process.env.CLIENT_ID;
-const API_KEY = process.env.API_KEY;
+const CLIENT_ID = env.CLIENT_ID
+const API_KEY = env.API_KEY;
 
 // Discovery doc URL for APIs used by the quickstart
 const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
