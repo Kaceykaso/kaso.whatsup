@@ -78,7 +78,7 @@ header ul {
     /* Space 🪐 */
     float: left;
     padding: 1em;
-    width: 65vw;
+    max-width: 65vw;
  }
 
  /* FOOTER 🦶 */

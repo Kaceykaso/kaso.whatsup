@@ -13,44 +13,13 @@
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
-	<link href="src/css/main.css" rel="stylesheet" />
 </head>
 
 <body class="is-preload">
-
-	<header class="main message-list">
-        <div class="message -left nes-balloon from-left">
-            <h1 class="title">Whatcha doing, Kaso?</h1>
-        </div>
-        <div class="message -right nes-balloon from-right">
-            <p>Check out when I have free time, and set up a meeting!</p>
-        </div>
-        <button class="nes-btn is-primary" title="Create a new meeting or event">Create an Event</button>
-	</header>
-
-	<section class="main">
-      <!--  calendar -->
-		<div id="content" class="nes-container">
-			<button id="authBtn" onclick="handleAuthClick()">Authorize</button>
-			<button id="signoutBtn" onclick="handleSignoutClick()">Sign Out</button>
-		</div>
-	</section>
-
-	<footer id="footer">
-		<ul>
-			<li><a href="#" title="Previous in webring">🔙</a></li>
-            <li class="textEllipsis">Kaso Webring</li>
-            <li><a href="#" title="Next in webring">🔜</a></li>
-		</ul>
-		<p>&copy; 2024 kaso.rocks</p>
-        <p><a href="https://github.com/nostalgic-css/NES.css" title="NES.CSS by BcRikko on Github" target="_blank">NES CSS by B.C.Rikko</a></p>
-	</footer>
+	<div id="root"></div>
 
 	<!-- Scripts -->
-	<script type="module" src="src/js/main.js"></script>
-	<script type="module" src="src/js/calendar.js"></script>
-	<script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
-    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+    <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>
