@@ -1,7 +1,9 @@
 # kaso.whatsup
 Google calendar experiment - displaying a calendar in view, that has been populated with randomly generated events. This calendar actually retains my actual free/available time ranges based on my actual events, and highlights the available time in view. Eventually, a viewer/user should be able to add an event to my calendar and view that; this event should be sent and added to my real google calendar as well.
 
-#### API
+Changed to use Google Booking page
+
+#### Potentional API updates
  PUBLIC
  
 /view - see calender (list of events) in a "calendar view"
