@@ -38,28 +38,13 @@ p {
    text-overflow: ellipsis;
    text-wrap: nowrap;
  }
-
-/* HEADER 💀 */
-
-header {
-    display: inline;
-    font-size: 1.5vh;
-    /* Space 🪐 */
-    float: right;
-    margin: 0;
-    padding: 1em;
-    width: 32vw;
-}
-
-header ul {
-    display: flex;
-    /* Flexing 💪 */
-    align-items: center;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-}
-
  /* CONTENT 📖 */
+
+ #root {
+   display: flex;
+   flex-direction: row;
+   max-width: 90vw;
+ }
 
  .main {
     /* Colors 🎨 */
@@ -74,11 +59,27 @@ header ul {
  }
 
  section.main {
-    display: inline;
     /* Space 🪐 */
-    float: left;
     padding: 1em;
-    max-width: 65vw;
+    max-width: 75vw;
+ }
+
+ #content {
+   position: relative;
+   width: 100%;
+   min-width: 60vw;
+   max-width: 75vw;
+   padding-top: 100%;
+ }
+
+ .calView {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
  }
 
  /* FOOTER 🦶 */
@@ -118,10 +119,6 @@ header ul {
 
  /* TYPOGRAPHY 🔤 */
 
- header h1 {
-    font-size: 1.5vh;
- }
-
  footer#footer {
     font-size: 1vh;
  }
@@ -132,18 +129,26 @@ header ul {
 
  /* RESPONSIVE 📱 */
  @media screen and (min-width: 50px) and (max-width: 650px) {
-   header.main, section.main {
-      display: block;
-      float: none;
+   .main {
+      margin-top: 10px;
       width: 95%;
    }
-   section.main {
-      margin-top: 10px;
+   #root {
+      flex-flow: column wrap;
    }
    footer#footer {
       flex-flow: row wrap;
       justify-content: space-around;
       position: relative;
+   }
+ }
+
+ @media screen and (min-width: 650px) and (max-width: 1000px) {
+   #root {
+      flex-flow: column wrap;
+   }
+   .main {
+      max-width: 95%;
    }
  }
 

@@ -1,0 +1,51 @@
+/**
+    kaso.whatsup > css > header
+	kaso.rocks | @kaceykaso
+	GNU GPL 3.0 license
+**/
+
+/* HEADER 💀 */
+
+header {
+    font-size: 1.5vh;
+    /* Space 🪐 */
+    margin: 0;
+    padding: 1em;
+    width: 32vw;
+}
+
+header ul {
+    display: flex;
+    /* Flexing 💪 */
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+ /* TYPOGRAPHY 🔤 */
+
+ header h1 {
+    font-size: 1.5vh;
+ }
+
+ /* FORMS 📝 */
+
+ /* ANIMATIONS 📺 */
+
+ /* RESPONSIVE 📱 */
+ @media screen and (min-width: 50px) and (max-width: 650px) {
+   header.main {
+      display: block;
+      float: none;
+      width: 95%;
+   }
+ }
+
+ @media screen and (min-width: 650px) and (max-width: 1000px) {
+    header.main {
+       width: 95%;
+    }
+  }
+
+ /* OVERRIDES ☠️ */
+
